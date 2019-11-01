@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AuthService } from '@app/core/services/auth.service';
 import { LoginComponent } from './login/login.component';
-import { AuthGuard } from '@app/core/guard/auth.guard';
-import { SharedModule } from '@app/shared/shared.module';
-import { LoggedGuard } from '@app/core/guard/logged.guard';
+import { SharedModule } from '../shared/shared.module';
+import { AuthService } from '../core/services/auth.service';
+import { AuthGuard } from '../core/guard/auth.guard';
+import { LoggedGuard } from '../core/guard/logged.guard';
 
 @NgModule({
     imports: [

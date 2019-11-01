@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { DataService } from '@app/core/services';
 import { LoadingComponent } from './layout/loading.component';
-import { SeoService } from '@app/core/services/seo.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AlertComponent } from './alert/alert.component';
+import { DataService } from '../core/services';
+import { SeoService } from '../core/services/seo.service';
 
 @NgModule({
     imports: [

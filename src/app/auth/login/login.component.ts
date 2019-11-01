@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AuthService } from '@app/core/services/auth.service';
-import { AlertService } from '@app/core/services/alert.service';
-import { LoadingComponent } from '@app/shared/layout/loading.component';
+import { LoadingComponent } from 'src/app/shared/layout/loading.component';
+import { AuthService } from 'src/app/core/services/auth.service';
+import { AlertService } from 'src/app/core/services/alert.service';
 
 @Component({
   selector: 'app-login',
@@ -37,10 +37,10 @@ export class LoginComponent implements OnInit {
         location.reload()
         LoadingComponent.display = false
       }
-    }, ()=> {
+    }, () => {
       LoadingComponent.display = false
-        this.alert.error('Wrong credentials')
-      
+      this.alert.error('Wrong credentials')
+
     })
   }
 }

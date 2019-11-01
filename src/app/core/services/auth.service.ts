@@ -7,8 +7,8 @@ import { ToolService } from './tool.service';
 import { BehaviorSubject } from 'rxjs';
 import * as moment from 'moment';
 import { HttpClient, HttpHeaders, HttpHeaderResponse } from '@angular/common/http';
-import { LoadingComponent } from '@app/shared/layout/loading.component';
-import { environment } from '@env/environment.prod';
+import { environment } from 'src/environments/environment';
+import { LoadingComponent } from 'src/app/shared/layout/loading.component';
 
 @Injectable()
 export class AuthService {
