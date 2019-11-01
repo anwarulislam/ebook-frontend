@@ -1,33 +1,33 @@
-import { Injectable } from '@angular/core';
-import * as CryptoJS from 'crypto-js';
-import { environment } from 'src/environments/environment';
-
+import { Injectable } from "@angular/core";
+import * as CryptoJS from "crypto-js";
+import { environment } from "./../../../environments/environment";
 
 @Injectable()
 export class JwtService {
-
   getToken(): String {
-    let token = window.localStorage['token'];
+    let token = window.localStorage["token"];
     // console.log(token)
     if (token) {
       return this.decryptData(token).privateKey;
     } else {
-      return ''
+      return "";
     }
   }
 
   saveToken(token: String) {
-    window.localStorage['token'] = token;
+    window.localStorage["token"] = token;
   }
 
   destroyToken() {
-    window.localStorage.removeItem('token');
+    window.localStorage.removeItem("token");
   }
 
   encryptData(data) {
-
     try {
-      return CryptoJS.AES.encrypt(JSON.stringify(data), environment.esk).toString();
+      return CryptoJS.AES.encrypt(
+        JSON.stringify(data),
+        environment.esk
+      ).toString();
     } catch (e) {
       //console.log(e);
     }
@@ -44,7 +44,4 @@ export class JwtService {
       //console.log(e);
     }
   }
-
-
-
 }
