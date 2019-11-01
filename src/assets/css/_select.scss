@@ -1,0 +1,7 @@
+@import './variables';
+
+select {
+    border-radius: $border_radius;
+    padding: $input_padding;
+    border: 1px solid $ash_color;
+}

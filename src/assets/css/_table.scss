@@ -1,0 +1,16 @@
+.table {
+    margin-bottom: 0;
+    thead {        
+        th {
+            vertical-align: top;
+        }
+    }
+
+    th, td {
+        vertical-align: middle;
+
+        a {
+            color: #fff!important;
+        }
+    }
+}

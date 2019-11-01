@@ -1,0 +1,30 @@
+#basic-link {
+  border-radius: 50%;
+  border: .5px solid lightgrey;
+  margin-right: 0;
+  padding: 1px;
+}
+
+#basic-link-dropdown {
+  left: auto !important;
+  right: 0 !important;
+}
+
+.dropdown-menu {
+  .dropdown-item {
+    &:hover {
+      color: red;
+      font-weight: bold;
+    }
+
+    &:active {
+      background: transparent;
+    }
+
+    &.active {
+      background-color: transparent;
+      color: red;
+      font-weight: bold;
+    }
+  }
+}

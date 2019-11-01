@@ -1,0 +1,41 @@
+// .btn-info {
+//     color: #fff;
+//     background-color: mediumpurple;
+//     border-color: mediumpurple;
+
+//     &:hover {
+//        background-color: blueviolet;
+//     border-color: blueviolet;
+//     }
+// }
+.btn-success {
+    color: #fff;
+    background-color: #0acf97;
+    border-color: #0acf97;
+    
+    &:hover {
+        background-color: #08ab7c;
+        border-color: #089e74;
+    }
+}
+.btn-light {
+    color: #fa5c7c;
+    background-color: #fff;
+    border-color: #fa5c7c;
+
+    &:hover {
+        color: #fff;
+        background-color: #f9375e;
+        border-color: #f82b54;
+    }
+}
+.btn-light {
+    color: #313a46;
+    background-color: #e3eaef;
+    border-color: #e3eaef;
+    
+    &:hover {
+        background-color: #cbd8e1;
+        border-color: #c3d2dc;
+    }
+}

@@ -1,0 +1,34 @@
+<nav class="navbar navbar-light custom-header" *ngIf="isLogged">
+  <a class="navbar-brand d-inline d-md-none" routerLink="/">
+    <img src="../../../../assets/img/ORFI-Logo-Black.png" class="d-inline-block align-top" alt="orfi_logo">
+    <span>ORFI</span>
+  </a>
+  <span class="ml-auto">
+    {{ user.name }}
+    <div class="btn-group" dropdown placement="bottom right">
+      <a id="button-alignment" class="navbar-brand" dropdownToggle aria-controls="dropdown-alignment">
+        <img src="../../../../assets/img/user.png" class="d-inline-block align-top" alt="orfi_logo">
+      </a>
+      <ul id="dropdown-alignment" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+        aria-labelledby="button-alignment">
+        <li>
+          <a class="dropdown-item" routerLinkActive="active" [routerLink]="[ '/classes' ]">Class</a>
+        </li>
+        <li>
+          <a class="dropdown-item" routerLinkActive="active" [routerLink]="[ '/subjects' ]">Subject</a>
+        </li>
+        <li>
+          <a class="dropdown-item" routerLinkActive="active" [routerLink]="[ '/topics' ]">Topic</a>
+        </li>
+        <li>
+          <a class="dropdown-item" routerLinkActive="active" [routerLink]="[ '/questions' ]">Question</a>
+        </li>
+        <li class="divider dropdown-divider"></li>
+        <li>
+          <a (click)="logout()" class="dropdown-item">Sign out</a>
+        </li>
+      </ul>
+    </div>
+
+  </span>
+</nav>

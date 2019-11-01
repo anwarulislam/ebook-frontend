@@ -1,0 +1,37 @@
+@import './variables';
+
+input {
+  display: block;
+  width: 100%;
+  padding: $input_padding;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $black_color;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid $ash_color;
+  border-radius: $border_radius;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input[type="file"] {
+  padding: 0;
+  border: 0;
+}
+
+::-webkit-file-upload-button {
+  padding: $input_padding;
+  color: $black_color;
+  border: 1px solid $ash_color;
+  border-radius: 5px;
+  background: $ash_color;
+}
+
+::-webkit-file-upload-button:hover {
+  border-color: $black_color;
+}
+
+*:focus {
+  box-shadow: none !important;
+  outline: none;
+}
